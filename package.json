@@ -6,12 +6,29 @@
     "start": "node ./bin/www"
   },
   "dependencies": {
+    "body-parser": "^2.2.0",
     "cookie-parser": "~1.4.4",
     "debug": "~2.6.9",
     "express": "^4.21.2",
     "http-errors": "~1.6.3",
     "morgan": "^1.10.1",
+    "mysql2": "^3.15.3",
     "nodemon": "^3.1.10",
-    "pug": "^2.0.4"
-  }
+    "pug": "^2.0.4",
+    "sequelize": "^6.37.7",
+    "sequelize-cli": "^6.6.3"
+  },
+  "description": "",
+  "main": "app.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Ronal0007-dev/pastexam.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Ronal0007-dev/pastexam/issues"
+  },
+  "homepage": "https://github.com/Ronal0007-dev/pastexam#readme"
 }
