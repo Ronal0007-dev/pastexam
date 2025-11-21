@@ -10,7 +10,10 @@ var usersRouter = require('./routes/users');
 var app = express();
 
 // view engine setup
-app.set('views', path.join(__dirname, 'views'));
+app.set('views', [
+  path.join(__dirname, 'views'),
+  path.join(__dirname, 'views/subjects'),
+  path.join(__dirname, 'views/other')]);
 app.set('view engine', 'pug');
 
 app.use(logger('dev'));
@@ -38,5 +41,12 @@ app.use(function(err, req, res, next) {
   res.status(err.status || 500);
   res.render('error');
 });
+
+
+ // 3000 is the port number in my case.
+  app.listen(3000, function() {
+      console.log("Server is running on port " + 3000);
+  });
+
 
 module.exports = app;
